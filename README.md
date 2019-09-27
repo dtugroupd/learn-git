@@ -119,3 +119,12 @@ Note: You can even close issues from other repositories by specifying organisati
 ![PR and close issue](assets/github_pr2.png)
 
 Closing the issue will automatically move it to the _Acceptance Test_ column.
+
+### And then?
+
+When you're done, checkout to master and pull, then start all over with a new task 👍
+
+```bash
+git checkout master
+git pull
+```
