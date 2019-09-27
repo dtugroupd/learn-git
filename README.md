@@ -82,3 +82,28 @@ We can now commit our changes:
 ```bash
 git commit
 ```
+
+This should open up VS Code, where you can now enter a descriptive commit message. Apply the commit by saving and closing the tab. If you regret commiting, don't save, just close the tab and select "Don't save".
+
+After committing, we are ready to push. As our newly created branch does not exist on GitHub (the remote), we have to tell git to create the branch on the remote as well. We can do that with `--set-upstream` or `-u` for short. We have to specify which remote we want to create the branch on, don't worry too much about that, as it will pretty much always be _origin_, except if you intentionally called it something else:
+
+```bash
+git push --set-upstream origin feature/add-git-guidance
+# or
+git push -u origin feature/add-git-guidance
+```
+
+If we make more changes on this branch, we can push without specifying the upstream after committing the changes:
+
+```bash
+git push
+```
+
+After committing, we can create a pull request. You can either go to <https://github.com/:org/:repo/pull/new">, select the branch and create, or even specify the branch name <https://github.com/:org/:repo/pull/new/:branch>.
+
+In my case it would be:
+
+* <https://github.com/dtugroupd/learn-git/pull/new>
+* <https://github.com/dtugroupd/learn-git/pull/new/feature/add-git-guidance>
+
+The latter is even displayed in the terminal when pushing the branch. Most terminals allows for control + click on links, taking you directly to the pull request page for that branch in your default browser.
