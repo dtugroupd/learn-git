@@ -1,3 +1,3 @@
 # Learn Git
 
-adasd
+Hello, World!
