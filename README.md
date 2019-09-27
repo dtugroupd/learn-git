@@ -107,3 +107,15 @@ In my case it would be:
 * <https://github.com/dtugroupd/learn-git/pull/new/feature/add-git-guidance>
 
 The latter is even displayed in the terminal when pushing the branch. Most terminals allows for control + click on links, taking you directly to the pull request page for that branch in your default browser.
+
+![Create pull request from terminal](assets/terminal_push_branch.png)
+
+Add a descriptive message to the pull request, add a reviewer. If your pull request should close any issues, add the text "Closes #xx" where xx is the issue id for each issue that it should close in the description on the pull request. Thus the issues should automatically be closed once merged into master. If you forgot, you can add it after you created the pull request, or if the pull request was already merged, manually find the issue and close it.
+
+Note: You can even close issues from other repositories by specifying organisation and repository name before the id (org/repo#id), i.e. `dtugroupd/TasksIssueTracker#14
+
+![PR and close issue](assets/github_pr.png)
+
+![PR and close issue](assets/github_pr2.png)
+
+Closing the issue will automatically move it to the _Acceptance Test_ column.
