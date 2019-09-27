@@ -120,7 +120,7 @@ Note: You can even close issues from other repositories by specifying organisati
 
 Closing the issue will automatically move it to the _Acceptance Test_ column.
 
-### And then?
+### And then?
 
 When you're done, checkout to master and pull, then start all over with a new task 👍
 
